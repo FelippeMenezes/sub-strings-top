@@ -7,7 +7,7 @@ def substrings(string, dictionary)
     end
   end
 
-  puts hash
+  return hash
 end
 
 puts "Please, write your amazing sentence below."
