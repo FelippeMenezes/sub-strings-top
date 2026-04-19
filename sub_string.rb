@@ -4,6 +4,11 @@ def substrings ( string, dictionary)
   p string
   p dictionary
 
+  dictionary.each do | word |
+    if string.include?(word)
+      p word
+    end
+  end
 end
 
-substrings( "low", dictionary)
+substrings( "below", dictionary)
