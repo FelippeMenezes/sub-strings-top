@@ -2,8 +2,8 @@ def substrings(string, dictionary)
   hash = Hash.new(0)
 
   dictionary.each do |word|
-    if string.scan(/#{word}/).count != 0
-      hash[word] = string.scan(/#{word}/).count
+    if string.scan(word).count != 0
+      hash[word] = string.scan(word).count
     end
   end
 
