@@ -1,4 +1,4 @@
-def substrings ( string, dictionary)
+def substrings(string, dictionary)
   hash = Hash.new(0)
 
   dictionary.each do |word|
