@@ -1,4 +1,4 @@
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own", "lo","part","partner","sit"]
+dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
 def substrings ( string, dictionary)
   hash = Hash.new(0)
@@ -6,14 +6,16 @@ def substrings ( string, dictionary)
   p downcase_string
 
   dictionary.each do |word|
-    p word
-    p string.scan(/#{word}/).count
-    if string.scan(/#{word}/).count != 0
-      hash[word] = string.scan(/#{word}/).count
-      p hash
+    if downcase_string.scan(/#{word}/).count != 0
+      hash[word] = downcase_string.scan(/#{word}/).count
+
     end
   end
+  puts hash
 end
 
-# substrings( "below", dictionary)
-substrings("Howdy partner, sit down! How's it going?", dictionary)
+puts "Please, write your amazing sentence below."
+user_string = gets.chomp
+
+substrings(user_string, dictionary)
+
