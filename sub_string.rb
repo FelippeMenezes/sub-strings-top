@@ -17,4 +17,3 @@ puts "Now, type the subwords, separated by ' ' (empty space), that you want to c
 user_dictionary = gets.chomp.downcase.split(" ")
 
 substrings(user_string, user_dictionary)
-
